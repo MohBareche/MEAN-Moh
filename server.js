@@ -10,7 +10,7 @@ mongoose.connect(config.uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, (err) => {
-    if (err) console.log(`Could Not connect to database: `, err);
+    if (err) console.log(`Connexion impossible à la base de données: `, err);
     console.log(`Connecté avec succès à la base de données: ${config.db}`);
 })
 
